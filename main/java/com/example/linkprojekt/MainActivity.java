@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         btnAdd = findViewById(R.id.btnAdd);
         etNewSite = findViewById(R.id.etNewSite);
 
-        sharedPreferences = getSharedPreferences("SearchPrefs", MODE_PRIVATE);
+        sharedPreferences = getSharedPreferences("amir", MODE_PRIVATE);
 
         Set<String> set = sharedPreferences.getStringSet("sites", new HashSet<>());
         siteList = new ArrayList<>(set);
